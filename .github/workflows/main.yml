@@ -17,12 +17,9 @@ jobs:
           conda env create -n python_workshops -f ../requirements.yml
           conda activate python_workshops
           jupyter nbconvert Decorators_Dataclass_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True 
-    - name: Commit files
+    - name: Commit and push files
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "Add changes" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        git push origin master
