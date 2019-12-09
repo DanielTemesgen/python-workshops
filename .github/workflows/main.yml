@@ -17,7 +17,12 @@ jobs:
         args: | 
           conda env create -n python_workshops -f ../requirements.yml
           conda activate python_workshops
-          jupyter nbconvert ../Decorators_Dataclasses_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True 
+          jupyter nbconvert ../Decorators_Dataclasses_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True
+          echo ls
+          cd ..
+          echo ls
+          cd ..
+          echo ls
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
