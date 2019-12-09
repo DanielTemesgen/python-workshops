@@ -12,3 +12,15 @@ jobs:
       uses: s-weigand/setup-conda@v1.0.1
       with:
         args: conda env create -f ../requirements.yml | jupyter nbconvert Decorators_Dataclass_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True
+    - name: Commit files
+      run: |
+        echo ${{ github.ref }}
+        git add .
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "ci: Automated build push" -a | exit 0
+    - name: Push changes
+      if: github.ref == 'refs/heads/master'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
