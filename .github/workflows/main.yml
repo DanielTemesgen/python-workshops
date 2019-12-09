@@ -13,7 +13,7 @@ jobs:
     - name: Setup conda environment
       uses: s-weigand/setup-conda@v1.0.1
       with:
-        args: conda env create -f ../requirements.yml
+        args: conda env create -n python_workshops -f ../requirements.yml | conda activate python_workshops
     - name: Build slides
       run: jupyter nbconvert Decorators_Dataclass_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True
     - name: Commit files
