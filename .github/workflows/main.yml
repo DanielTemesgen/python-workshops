@@ -10,8 +10,8 @@ jobs:
     steps:
     - name: setup-conda
       uses: s-weigand/setup-conda@v1.0.1
-    - name: Make conda environment
-      run: conda env create -f ../requirements.yml
+      with:
+        args: conda env update -f ../requirements.yml
     - name: Make slides
       run: jupyter nbconvert Decorators_Dataclass_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True
 
