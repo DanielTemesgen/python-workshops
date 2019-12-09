@@ -8,7 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - name: setup-conda
+    - uses: s-weigand/setup-conda@v1.0.1
+    - name: Make conda environment
+      run: conda create env -f /requirements.yml
     - name: Make slides
-      run: jupyter nbconvert Decorators_Dataclass_IDE.ipynb --to slides --post serve --SlidesExporter.reveal_scroll=True
+      run: jupyter nbconvert Decorators_Dataclass_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True
 
