@@ -8,10 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: setup-conda
+    - name: Checkout master branch
+      uses: actions/checkout@master
+    - name: Setup conda environment
       uses: s-weigand/setup-conda@v1.0.1
       with:
-        args: conda env create -f ../requirements.yml | jupyter nbconvert Decorators_Dataclass_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True
+        args: conda env create -f ../requirements.yml
+    - name: Build slides
+      run: jupyter nbconvert Decorators_Dataclass_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
