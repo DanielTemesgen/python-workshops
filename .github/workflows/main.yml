@@ -12,10 +12,12 @@ jobs:
       uses: s-weigand/setup-conda@v1.0.1
       with:
         args: conda env create -f ../requirements.yml | jupyter nbconvert Decorators_Dataclass_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True
-    - name: Git Commit and Push
-      uses: github-actions-x/commit@v2.2
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Add changes" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        push-branch: 'master'
-        commit-message: 'publish'
-        force-add: 'true'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
