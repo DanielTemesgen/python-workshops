@@ -16,5 +16,5 @@ jobs:
       uses: github-actions-x/commit@v2.2
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        push-branch: 'master'
-        commit-message: 'publish'
+        push-branch: master
+        commit-message: 'Build Slides'
