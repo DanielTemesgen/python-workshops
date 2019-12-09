@@ -8,10 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: checkout
-      uses: actions/checkout@master
-      with:
-        ref: master
     - name: setup-conda
       uses: s-weigand/setup-conda@v1.0.1
       with:
