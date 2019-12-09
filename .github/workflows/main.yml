@@ -19,4 +19,7 @@ jobs:
     - name: Git Commit and Push
       uses: github-actions-x/commit@v2.2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        push-branch: 'master'
+        commit-message: 'publish'
+        force-add: 'true'
