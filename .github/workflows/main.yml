@@ -10,15 +10,16 @@ jobs:
     steps:
     - name: Checkout master branch
       uses: actions/checkout@master
-    - name: Setup conda environment and Build Slides
-      uses: s-weigand/setup-conda@v1.0.1
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
       with:
-        activate-conda: false
-    - name: Conda
+        python-version: 3.8
+    - name: Install dependencies
       run: |
-          conda env create -n python_workshops -f requirements.yml
-          conda activate python_workshops
-          jupyter nbconvert Decorators_Dataclasses_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True
+        python -m pip install --upgrade pip
+        pip install -r ../requirements.txt
+        jupyter nbconvert ../Decorators_Dataclasses_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
