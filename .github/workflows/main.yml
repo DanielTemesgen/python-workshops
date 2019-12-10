@@ -16,7 +16,17 @@ jobs:
         activate-conda: false
     - name: Conda
       run: |
+          echo ls
+          cd ..
+          echo ls
+          cd ..
+          echo ls
           conda env create -n python_workshops -f ../requirements.yml
+          echo ls
+          cd ..
+          echo ls
+          cd ..
+          echo ls
           conda activate python_workshops
           jupyter nbconvert ../Decorators_Dataclasses_IDE.ipynb --to slides --SlidesExporter.reveal_scroll=True
           echo ls
