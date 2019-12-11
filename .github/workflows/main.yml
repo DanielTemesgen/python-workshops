@@ -20,7 +20,7 @@ jobs:
         pip install -r requirements.txt
         cd Decorators_Dataclasses_IDEs/
         jupyter nbconvert Decorators_Dataclasses_IDEs.ipynb --to slides --SlidesExporter.reveal_scroll=True
-        mv Decorators_Dataclasses_IDEs.html index.html -f
+        mv Decorators_Dataclasses_IDEs.slides.html index.html -f
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
