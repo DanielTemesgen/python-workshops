@@ -1,0 +1,3 @@
+[submodule "Decorators_Dataclasses_IDEs/reveal.js"]
+	path = Decorators_Dataclasses_IDEs/reveal.js
+	url = https://github.com/hakimel/reveal.js.git
