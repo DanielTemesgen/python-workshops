@@ -13295,18 +13295,18 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">functools</span>
 <span class="k">def</span> <span class="nf">emphasis</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
     <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span> <span class="c1"># optional</span>
-    <span class="k">def</span> <span class="nf">wrapper_do_twice</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="n">value</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="c1"># this value is the original &quot;hello!&quot;</span>
         <span class="k">return</span> <span class="n">value</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>         <span class="c1"># let&#39;s add that &quot;!&quot;</span>
     <span class="c1"># this wrapper_do_twice is a function...</span>
     <span class="c1"># ...which takes a function and returns it&#39;s string return value, with an additional &quot;!&quot;</span>
-    <span class="k">return</span> <span class="n">wrapper_do_twice</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
 </pre></div>
 
     </div>
