@@ -10,11 +10,11 @@ jobs:
     steps:
     - name: Checkout master branch
       uses: actions/checkout@master
-    - name: Conda
+    - name: Setup Conda and Make Slides
       uses: goanpeca/setup-miniconda@v1
       with:
         miniconda-version: 'latest'
-        environment-file: environment.yml
+        environment-file: binder/environment.yml
         activate-environment: notebook
         auto-activate-base: false
     - shell: bash
