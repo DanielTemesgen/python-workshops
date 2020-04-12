@@ -1,6 +1,9 @@
-name: Build Slides
+name: Build Slides on Master
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
