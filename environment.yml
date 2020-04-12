@@ -1,6 +1,7 @@
 name: notebook
 channels:
   - defaults
+  - anaconda
   - conda-forge
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
