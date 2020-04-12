@@ -1,6 +1,6 @@
 A repo for the different workshops I've given on Python topics.
 
-### New JupyterLab View
+### All Workshops
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?urlpath=lab)
 
 ## Pipelines
