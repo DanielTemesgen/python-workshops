@@ -16,10 +16,9 @@ jobs:
         miniconda-version: 'latest'
         environment-file: environment.yml
         activate-environment: notebook
-    - name: Install dependencies
-      shell: bash
+        auto-activate-base: false
+    - shell: bash
       run: |
-        conda activate environment.yml
         cd Decorators_Dataclasses_IDEs/
         jupyter nbconvert Decorators_Dataclasses_IDEs.ipynb --to slides --SlidesExporter.reveal_scroll=True
         mv Decorators_Dataclasses_IDEs.slides.html index.html -f
