@@ -16,6 +16,7 @@ jobs:
         miniconda-version: 'latest'
         activate-environment: environment.yml
     - name: Install dependencies
+      shell: bash
       run: |
         conda activate environment.yml
         cd Decorators_Dataclasses_IDEs/
