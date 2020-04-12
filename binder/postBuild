@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Add jupyterlab extenstions
-jupyter labextension install @jupyterlab/toc
-
 # Import the workspace into JupyterLab
 jupyter lab workspaces import binder/workspace.json
+
+# Add jupyterlab extenstions
+jupyter labextension install @jupyterlab/toc
