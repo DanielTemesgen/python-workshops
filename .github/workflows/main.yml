@@ -19,6 +19,7 @@ jobs:
         auto-activate-base: false
     - shell: bash
       run: |
+        export PATH=usr/share/miniconda3/bin:$PATH
         cd Decorators_Dataclasses_IDEs/
         jupyter nbconvert Decorators_Dataclasses_IDEs.ipynb --to slides --SlidesExporter.reveal_scroll=True
         mv Decorators_Dataclasses_IDEs.slides.html index.html -f
