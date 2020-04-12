@@ -4,4 +4,4 @@
 jupyter labextension install @jupyterlab/toc
 
 # Import the workspace into JupyterLab
-jupyter lab workspaces import workspace.json
+jupyter lab workspaces import binder/workspace.json
