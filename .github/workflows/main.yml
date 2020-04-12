@@ -14,7 +14,8 @@ jobs:
       uses: goanpeca/setup-miniconda@v1
       with:
         miniconda-version: 'latest'
-        activate-environment: environment.yml
+        environment-file: environment.yml
+        activate-environment: notebook
     - name: Install dependencies
       shell: bash
       run: |
