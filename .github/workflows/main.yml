@@ -17,6 +17,7 @@ jobs:
     - name: Install dependencies
       run: |
         conda env create -f environment.yml
+        conda activate notebook
         cd Decorators_Dataclasses_IDEs/
         jupyter nbconvert Decorators_Dataclasses_IDEs.ipynb --to slides --SlidesExporter.reveal_scroll=True
         mv Decorators_Dataclasses_IDEs.slides.html index.html -f
