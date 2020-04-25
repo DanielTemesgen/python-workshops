@@ -28,7 +28,7 @@
             }
         },
         "file-browser-filebrowser:cwd": {
-            "path": "binder"
+            "path": ""
         },
         "@jupyterlab/settingeditor-extension:plugin": {
             "sizes": [
@@ -45,7 +45,8 @@
         },
         "markdownviewer-widget:index.md": {
             "data": {
-                "name": "1"
+                "path": "index.md",
+                "factory": "Markdown Preview"
             }
         }
     },
