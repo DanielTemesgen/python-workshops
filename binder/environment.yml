@@ -6,7 +6,12 @@ dependencies:
   - eli5=0.9.0
   - matplotlib=3.1.0
   - numpy=1.18.1
+  - scipy=1.4.1
   - pandas=1.0.3
+  - geopandas=0.7.0
   - scikit-learn=0.22.2
   - scikit-plot=0.3.7
   - jupyter=1.0.0
+  - shapely=1.7.0
+  - hvplot=0.5.2
+  - geoviews=1.8.1
