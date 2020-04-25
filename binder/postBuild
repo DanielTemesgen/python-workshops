@@ -5,3 +5,4 @@ jupyter lab workspaces import binder/workspace.json
 
 # Add jupyterlab extenstions
 jupyter labextension install @jupyterlab/toc
+jupyter labextension install @pyviz/jupyterlab_pyviz
