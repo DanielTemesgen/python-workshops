@@ -1,11 +1,12 @@
 #!/bin/bash
 
+# Running notebooks with interactive plots in a trusted state so they appear when the file opens
+jupyter trust Geospatial/hide_warnings.py
+jupyter trust Geospatial/Geospatial_Basics.ipynb
+
 # Import the workspace into JupyterLab
 jupyter lab workspaces import binder/workspace.json
 
 # Add jupyterlab extenstions
 jupyter labextension install @jupyterlab/toc
 jupyter labextension install @pyviz/jupyterlab_pyviz
-
-# Running notebooks with interactive plots in a trusted state so they appear when the file opens
-jupyter trust Geospatial/Geospatial_Basics.ipynb
