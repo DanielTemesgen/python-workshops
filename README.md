@@ -14,3 +14,8 @@ A repo for the different workshops I've given on Python topics.
 ## Geospatial Basics
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?urlpath=lab/tree/Geospatial/Geospatial_Basics.ipynb)
+
+## Visualisation
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DanielTemesgen/python-workshops/master?urlpath=lab/tree/Visualisation)
+
