@@ -1,3 +1,4 @@
+# Python Workshops 🐍🏋🏽‍♂️
 A repo for the different workshops I've given on Python topics.
 
 ### All Workshops
