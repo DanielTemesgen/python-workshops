@@ -1,7 +1,7 @@
 name: notebook
 channels:
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
   - eli5
   - matplotlib
