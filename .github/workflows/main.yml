@@ -14,7 +14,6 @@ jobs:
     - name: Setup Conda and Make Slides
       uses: conda-incubator/setup-miniconda@v2.1.1
       with:
-        miniconda-version: 'latest'
         environment-file: binder/environment.yml
         activate-environment: notebook
         auto-activate-base: false
