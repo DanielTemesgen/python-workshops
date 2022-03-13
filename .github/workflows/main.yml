@@ -16,6 +16,7 @@ jobs:
       with:
         environment-file: binder/environment.yml
         activate-environment: notebook
+        mamba-version: "*"
         auto-activate-base: false
     - shell: bash
       run: |
