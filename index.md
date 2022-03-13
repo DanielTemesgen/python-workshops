@@ -1,9 +1,9 @@
 # Python Workshops
 
-[Pipelines](./Pipelines/Pipelines.ipynb)
+[Pipelines](pipelines/pipelines.ipynb)
 
-[Decorators, Dataclasses and IDEs](./Decorators_Dataclasses_IDEs/Decorators_Dataclasses_IDEs.ipynb)
+[Decorators, Dataclasses and IDEs](decorators-dataclasses-ides/decorators-dataclasses-ides.ipynb)
 
-[Geospatial Basics](./Geospatial/Geospatial_Basics.ipynb)
+[Geospatial Basics](./geospatial/geospatial-basics.ipynb)
 
-[Visualisation](./Visualisation)
+[Visualisation](./visualisation)
