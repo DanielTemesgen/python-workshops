@@ -22,7 +22,7 @@ jobs:
       run: |
         export PATH=/usr/share/miniconda3/envs/notebook/bin:$PATH
         cd decorators-dataclasses-ides/
-        jupyter nbconvert decorators-dataclasses-ides.ipynb --to slides --SlidesExporter.reveal_scroll=True
+        python -m jupyter nbconvert decorators-dataclasses-ides.ipynb --to slides --SlidesExporter.reveal_scroll=True
         mv decorators-dataclasses-ides.slides.html index.html -f
     - name: Commit files
       run: |
